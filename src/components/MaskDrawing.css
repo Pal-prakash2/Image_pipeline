@@ -1,0 +1,22 @@
+.canvas-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%) opacity(50%); /* Greyish tint */
+    z-index: 0;
+  }
+  
+  .canvas-container canvas {
+    position: relative;
+    z-index: 1;
+    display: block;
+  }

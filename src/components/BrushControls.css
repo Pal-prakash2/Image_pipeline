@@ -1,0 +1,63 @@
+.brush-controls {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .brush-label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  .brush-slider {
+    width: 100%;
+    -webkit-appearance: none;
+    height: 8px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: background 0.3s ease;
+  }
+  
+  .brush-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .brush-slider::-webkit-slider-thumb:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+  }
+  
+  .brush-slider::-webkit-slider-thumb:active {
+    background: #004494;
+    transform: scale(1);
+  }
+  
+  .brush-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .brush-slider::-moz-range-thumb:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+  }
+  
+  .brush-slider::-moz-range-thumb:active {
+    background: #004494;
+    transform: scale(1);
+  }

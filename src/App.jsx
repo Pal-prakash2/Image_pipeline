@@ -3,7 +3,7 @@ import ImageUpload from './components/ImageUpload.jsx';
 import MaskDrawing from './components/MaskDrawing.jsx';
 import BrushControls from './components/BrushControls.jsx';
 import DisplayImages from './components/DisplayImages.jsx';
-import './App.css';
+import './App.css'; // Import the global CSS file
 
 function App() {
   const [originalImage, setOriginalImage] = useState(null);
@@ -14,7 +14,7 @@ function App() {
   console.log('Mask Image:', maskImage);
 
   return (
-    <div>
+    <div className="container">
       <h1>Image Pipeline</h1>
       <ImageUpload onImageUpload={setOriginalImage} />
       <BrushControls brushRadius={brushRadius} setBrushRadius={setBrushRadius} />

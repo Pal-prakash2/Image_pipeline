@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import CanvasDraw from 'react-canvas-draw';
 import './MaskDrawing.css'; // Import the CSS file
 
@@ -52,16 +52,6 @@ const MaskDrawing = ({ brushRadius, onSave, image }) => {
           canvasHeight={canvasDimensions.height}
           brushColor="white"
           backgroundColor="transparent"
-        />
-      </div>
-      <div>
-        <label>Brush Size: </label>
-        <input
-          type="range"
-          min="1"
-          max="50"
-          value={brushRadius}
-          onChange={(e) => setBrushRadius(e.target.value)}
         />
       </div>
       <button onClick={handleSave}>Save Mask</button>
